@@ -1,0 +1,39 @@
+//Write a program to print fibonacci numbers upto n digits where n is provided by the user 
+
+
+package loops;
+
+import java.util.Scanner;
+
+public class ForLoopsFibonacci {
+
+	public static void main(String[] args) {
+
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("enter the number of terms required in the series:");
+		
+		int n = sc.nextInt();
+		
+		int a = 0;
+		int b = 1;
+		
+		System.out.println("The required fibonacci series is as follows:");
+		
+		System.out.print(a + " " );
+		System.out.print(b + " ");
+		
+		for (int i = 0; i <= n-2; i++) {
+		
+			int c = a +b;
+			System.out.print(c+" ");
+			a = b;
+			b = c;
+			
+			
+		}
+
+	}
+
+}
